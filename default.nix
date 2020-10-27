@@ -43,4 +43,20 @@ in {
     self.lib.zig.versionIndex) // {
       custom = zigWithParameters;
     };
+
+  buildZigProject = { name, version ? "", src, buildInputs ? [], extraBuildSteps ? "",
+    zigPackage ? self.zig.master, buildMode ? "release-safe", buildFlags ? [] }:
+    self.stdenvNoCC.mkDerivation {
+      inherit name version src buildInputs;
+      nativeBuildInputs = [ zigPackage ];
+      dontConfigure = true;
+      dontInstall = true;
+      buildPhase = ''
+        export XDG_CACHE_HOME=$(mktemp -d)
+        mkdir $out
+        zig build install ${if buildMode != "debug" then "-D${buildMode}=true" else ""} \
+        --prefix $out ${builtins.toString buildFlags}
+        rm -rf $XDG_CACHE_HOME
+      '';
+    };
 }
