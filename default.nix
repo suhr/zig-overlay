@@ -1,62 +1,44 @@
-self: super:
+{ pkgs ? import <nixpkgs> {},
+  system ? "x86_64-linux" }:
 
-let
-  zigWithParameters = parameters:
-    let
-      arch = let system = builtins.currentSystem;
-      in if system == "x86_64-darwin" then
-        "macos-x86_64"
-      else
-        builtins.concatStringsSep "-"
-        (super.lib.reverseList (super.lib.splitString "-" system));
-    in super.stdenvNoCC.mkDerivation {
-      name = "zig";
-      version = parameters.version;
-      src = super.fetchurl {
-        url =
-          "https://ziglang.org/builds/zig-${arch}-${parameters.version}.tar.xz";
-        sha256 = parameters.sha256;
+let inherit (pkgs) lib;
+    releases = builtins.fromJSON (lib.strings.fileContents ./sources.json);
+in lib.attrsets.mapAttrs (k: v: 
+  if k == "master" then
+    lib.attrsets.mapAttrs (k: v:
+      (pkgs.stdenv.mkDerivation {
+        pname = "zig";
+        inherit (v.${system}) version;
+        src = pkgs.fetchurl {
+          inherit (v.${system}) url sha256;
+        };
+        dontBuild = true;
+        dontFixup = true;
+        installPhase = ''
+          mkdir -p $out/{doc,bin,lib}
+          cp -r docs/* $out/doc
+          cp -r lib/* $out/lib
+          cp zig $out/bin/zig
+        '';
+      }))
+      v
+  else
+    pkgs.stdenv.mkDerivation {
+      pname = "zig";
+      inherit (v.${system}) version;
+      src = pkgs.fetchurl {
+        inherit (v.${system}) url sha256;
       };
-      dontConfigure = true;
       dontBuild = true;
+      dontFixup = true;
       installPhase = ''
-        mkdir -p $out $out/bin $out/doc
-        mv lib/ $out/
-        mv zig $out/bin
-        mv langref.html $out/doc
+        mkdir -p $out/{doc,bin,lib}
+        cp -r ${if k == "0.6.0" then "doc/*"
+                else
+                  if k == "0.7.0" then "langref.html"
+                  else "docs/*"} $out/doc
+        cp -r lib/* $out/lib
+        cp zig $out/bin/zig
       '';
-    };
-in {
-  lib = super.lib // {
-    zig = rec {
-      versionIndex = super.lib.importJSON
-        (builtins.fetchurl "https://ziglang.org/download/index.json");
-      getParameters = version: {
-        version = versionIndex.${version}.version;
-        sha256 = versionIndex.${version}.${builtins.currentSystem}.shasum;
-      };
-    };
-  };
-
-  zig = (super.lib.attrsets.mapAttrs
-    (name: value: (zigWithParameters (self.lib.zig.getParameters name)))
-    self.lib.zig.versionIndex) // {
-      custom = zigWithParameters;
-    };
-
-  buildZigProject = { name, version ? "", src, buildInputs ? [], extraBuildSteps ? "",
-    zigPackage ? self.zig.master, buildMode ? "release-safe", buildFlags ? [] }:
-    self.stdenvNoCC.mkDerivation {
-      inherit name version src buildInputs;
-      nativeBuildInputs = [ zigPackage ];
-      dontConfigure = true;
-      dontInstall = true;
-      buildPhase = ''
-        export XDG_CACHE_HOME=$(mktemp -d)
-        mkdir $out
-        zig build install ${if buildMode != "debug" then "-D${buildMode}=true" else ""} \
-        --prefix $out ${builtins.toString buildFlags}
-        rm -rf $XDG_CACHE_HOME
-      '';
-    };
-}
+    })
+  releases

@@ -1,0 +1,8 @@
+#+TITLE: Zig-overlay flake
+
+* Provided utilities:
+  - /Nightly/ versions (updated daily) (=.master.<date>=)
+  - Release versions (=."0.7.1"=)
+
+* For contributors:
+  The =update.rb= scripts manages updating the information in =sources.json=.
