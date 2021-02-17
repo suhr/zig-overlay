@@ -12,6 +12,7 @@ in lib.attrsets.mapAttrs (k: v:
         src = pkgs.fetchurl {
           inherit (v.${system}) url sha256;
         };
+        dontConfigure = true;
         dontBuild = true;
         dontFixup = true;
         installPhase = ''
@@ -29,6 +30,7 @@ in lib.attrsets.mapAttrs (k: v:
       src = pkgs.fetchurl {
         inherit (v.${system}) url sha256;
       };
+      dontConfigure = true;
       dontBuild = true;
       dontFixup = true;
       installPhase = ''

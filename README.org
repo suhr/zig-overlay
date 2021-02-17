@@ -1,8 +1,27 @@
 #+TITLE: Zig-overlay flake
 
-* Provided utilities:
+** Provided utilities:
   - /Nightly/ versions (updated daily) (=.master.<date>=)
-  - Release versions (=."0.7.1"=)
+  - Release versions
 
-* For contributors:
-  The =update.rb= scripts manages updating the information in =sources.json=.
+*** Usage
+    In your =flake.nix= file:
+    #+begin_src nix
+      {
+        inputs.zig.url = "github:arqv/zig-overlay/flake";
+        outputs = { self, zig, ... }: {
+          ...
+        }
+      }
+    #+end_src
+
+    In a shell:
+    #+begin_src sh
+      # run the latest version (0.7.1)
+      $ nix run 'github:arqv/zig-overlay/flake#'
+      # open a shell with master version dated 2021-02-13 (oldest version available)
+      $ nix shell 'github:arqv/zig-overlay/flake#master."2021-02-13"'
+    #+end_src
+ 
+** For contributors:
+  The =update= script manages updating the information in =sources.json=.
