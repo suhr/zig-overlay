@@ -1,0 +1,37 @@
+#+TITLE: Zig-overlay flake
+
+*IMPORTANT:* The =flake= branch has been merged into =main=. All further updates will be made to this branch, make sure to update your projects.
+
+** Description
+   In this repository lives a Nix flake packaging the *Zig* compiler binaries using the [[https://ziglang.com/download/index.json][data]] provided by the Zig team.
+
+*** Provided utilities
+  - /Nightly/ versions updated daily (=.master.<date>=), starting from version =0.8.0-dev.1140+9270aae07= dated 2021-02-13, and latest master (=.master.latest=) for the sake of convenience.
+  - Release versions.
+
+*** Usage
+**** Without flake support?
+     Import in your project as you would normally (=pkgs.fetchFromGitHub= or =builtins.fetchgit=), with (/hopefully/) no tinkering needed! The =default.nix= exposes a =pkgs= argument for possible pinning of the Nixpkgs repository, and a =system= argument which defaults to =builtins.currentSystem=.
+
+**** With flake support?
+     In your =flake.nix= file:
+    #+begin_src nix
+      {
+        inputs.zig.url = "github:arqv/zig-overlay/flake";
+        outputs = { self, zig, ... }: {
+          ...
+        };
+      }
+    #+end_src
+     In a shell:
+    #+begin_src sh
+      # run the latest version (0.7.1)
+      $ nix run 'github:arqv/zig-overlay/flake#'
+      # open a shell with master version dated 2021-02-13 (oldest version available)
+      $ nix shell 'github:arqv/zig-overlay/flake#master."2021-02-13"'
+      # open a shell with latest master version
+      $ nix shell 'github:arqv/zig-overlay/flake#master.latest'
+    #+end_src
+ 
+** For contributors
+  The =update= script manages updating the information in =sources.json=. The only dependency is Nix, and it's written internally in Ruby.
