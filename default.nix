@@ -1,5 +1,5 @@
 { pkgs ? import <nixpkgs> {},
-  system ? "x86_64-linux" }:
+  system ? builtins.currentSystem }:
 
 let inherit (pkgs) lib;
     releases = builtins.fromJSON (lib.strings.fileContents ./sources.json);

@@ -42,6 +42,7 @@ sources["master"][response["master"]["date"]] = DEFAULT_SYSTEMS.to_h do |system|
              "version" => response["master"]["version"],
              "sha256" => data["shasum"] }]
 end
+sources["master"]["latest"] = sources["master"][response["master"]["date"]]
 
 File.write("sources.json", JSON.pretty_generate(sources))
 
