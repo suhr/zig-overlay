@@ -17,7 +17,7 @@
      In your =flake.nix= file:
     #+begin_src nix
       {
-        inputs.zig.url = "github:arqv/zig-overlay/flake";
+        inputs.zig.url = "github:arqv/zig-overlay";
         outputs = { self, zig, ... }: {
           ...
         };
@@ -26,11 +26,11 @@
      In a shell:
     #+begin_src sh
       # run the latest version (0.7.1)
-      $ nix run 'github:arqv/zig-overlay/flake#'
+      $ nix run 'github:arqv/zig-overlay'
       # open a shell with master version dated 2021-02-13 (oldest version available)
-      $ nix shell 'github:arqv/zig-overlay/flake#master."2021-02-13"'
+      $ nix shell 'github:arqv/zig-overlay#master."2021-02-13"'
       # open a shell with latest master version
-      $ nix shell 'github:arqv/zig-overlay/flake#master.latest'
+      $ nix shell 'github:arqv/zig-overlay#master.latest'
     #+end_src
  
 ** For contributors
