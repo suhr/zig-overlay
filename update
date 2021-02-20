@@ -4,6 +4,7 @@
 require 'net/http'
 require 'json'
 require 'pathname'
+require 'fileutils'
 
 ZIG_URI = URI("https://ziglang.org/download/index.json")
 DEFAULT_SYSTEMS = ["x86_64-linux", "aarch64-linux", "x86_64-darwin"]
@@ -44,7 +45,8 @@ sources["master"][response["master"]["date"]] = DEFAULT_SYSTEMS.to_h do |system|
 end
 sources["master"]["latest"] = sources["master"][response["master"]["date"]]
 
-File.write("sources.json", JSON.pretty_generate(sources))
+FileUtils.cp "sources.json", "sources.json.bak"
+File.write "sources.json", JSON.pretty_generate(sources)
 
 # Local Variables:
 # mode: ruby
