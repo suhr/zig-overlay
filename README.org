@@ -1,6 +1,6 @@
 #+TITLE: Zig-overlay flake
 
-*IMPORTANT:* The =flake= branch has been merged into =main=. All further updates will be made to this branch, make sure to update your projects.
+I've been forgetting to update this. Sorry.
 
 ** Description
    In this repository lives a Nix flake packaging the *Zig* compiler binaries using the [[https://ziglang.com/download/index.json][data]] provided by the Zig team.
