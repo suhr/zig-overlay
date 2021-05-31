@@ -13,6 +13,18 @@ I've been forgetting to update this. Sorry.
 **** Without flake support?
      Import in your project as you would normally (=pkgs.fetchFromGitHub= or =builtins.fetchgit=), with (/hopefully/) no tinkering needed! The =default.nix= exposes a =pkgs= argument for possible pinning of the Nixpkgs repository, and a =system= argument which defaults to =builtins.currentSystem=.
 
+     In your =configuration.nix= file:
+     #+begin_src nix
+       # It is a good idea to use an exact commit in place of 'main' here.
+       let zigf = fetchTarball "https://github.com/arqv/zig-overlay/archive/main.tar.gz";
+       in
+         # If you're using home-manager
+         home.packages = [ zigf.master.latest ]; # or any available version
+         # If you're using NixOS
+         users.user.<username>.packages = [ zigf.master.latest ]; # or any available version
+       # ...the rest of your configuration
+     #+end_src
+
 **** With flake support?
      In your =flake.nix= file:
     #+begin_src nix
