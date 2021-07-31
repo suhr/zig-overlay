@@ -1,6 +1,4 @@
-#+TITLE: Zig-overlay flake
-
-I've been forgetting to update this. Sorry.
+#+TITLE: Nix flake for Zig
 
 ** Description
    In this repository lives a Nix flake packaging the *Zig* compiler binaries using the [[https://ziglang.com/download/index.json][data]] provided by the Zig team.
@@ -13,11 +11,10 @@ I've been forgetting to update this. Sorry.
 **** Without flake support?
      Import in your project as you would normally (=pkgs.fetchFromGitHub= or =builtins.fetchgit=), with (/hopefully/) no tinkering needed! The =default.nix= exposes a =pkgs= argument for possible pinning of the Nixpkgs repository, and a =system= argument which defaults to =builtins.currentSystem=.
 
-     In your =configuration.nix= file:
+     To make it visible in your system configuration:
      #+begin_src nix
        # It is a good idea to use an exact commit in place of 'main' here.
-       let zigf = fetchTarball "https://github.com/arqv/zig-overlay/archive/main.tar.gz";
-       in
+       let zigf = fetchTarball "https://github.com/arqv/zig-overlay/archive/main.tar.gz" in
          # If you're using home-manager
          home.packages = [ zigf.master.latest ]; # or any available version
          # If you're using NixOS
