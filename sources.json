@@ -36,24 +36,24 @@
     },
     "latest": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "2a45259babc69ccecc0cf2266d70c8a91a00718c35460d6a6e6b4c812ea21363"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "ddf8549a5fac291eb6c3ca652ed1968ba77f846f3bfdee1e381da18891b19eb9"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "3dc35fdde421ebbb143a56a6bd548c92a047cd3207cb0534b9b1171282497adb"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "0fca6a0cd5b2fffb0fee5832805af4bf155081a7d98f5d66f751e010eb27c548"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "99b653d4789a8c9fa76bbe1ddf2126924455ace0a0902c765d74304c46634aa4"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "5bd977bb785f008cd1b861f8f37c15b7a0652b73d4516c13c8ec599e2fd1abcd"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "ed52cbe128e76bdd68b369c6c838a954f65f409ac7c7746abdde1fc577cec2c1"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "9a379cbb5a5aa9069809fe2ccd60e8bc37d1172e3fb5182eee8edb35a1fa7eb8"
       }
     },
     "2021-02-20": {
@@ -4115,24 +4115,24 @@
     },
     "2022-01-15": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "2a45259babc69ccecc0cf2266d70c8a91a00718c35460d6a6e6b4c812ea21363"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "ddf8549a5fac291eb6c3ca652ed1968ba77f846f3bfdee1e381da18891b19eb9"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "3dc35fdde421ebbb143a56a6bd548c92a047cd3207cb0534b9b1171282497adb"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "0fca6a0cd5b2fffb0fee5832805af4bf155081a7d98f5d66f751e010eb27c548"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "99b653d4789a8c9fa76bbe1ddf2126924455ace0a0902c765d74304c46634aa4"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "5bd977bb785f008cd1b861f8f37c15b7a0652b73d4516c13c8ec599e2fd1abcd"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.280+b3471ef30.tar.xz",
-        "version": "0.10.0-dev.280+b3471ef30",
-        "sha256": "ed52cbe128e76bdd68b369c6c838a954f65f409ac7c7746abdde1fc577cec2c1"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.290+3901b6fb0.tar.xz",
+        "version": "0.10.0-dev.290+3901b6fb0",
+        "sha256": "9a379cbb5a5aa9069809fe2ccd60e8bc37d1172e3fb5182eee8edb35a1fa7eb8"
       }
     }
   },
