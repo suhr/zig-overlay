@@ -36,24 +36,24 @@
     },
     "latest": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "95e9e4bd84e9adb6ec84818ae264c732c0836d7f853abfbb0b20cc08b1c3057d"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "5a7ef2a2992176d1f954d4553e21f8f76136c414601581fa060f5afc8d050854"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "d7ddeacf6e6e6439f2a5e2b096615293fac659b908779618f534ab6d324ecc56"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "af96be7149e097dacb1e7b5182ad56782ab3006ba3f4b1e16dcc9a9e990bc6b5"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "c32d0c701f23cb6dc9d09d4ba3ba8eff2d6921aef0b31e566656c0326bb9e927"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "444ccd3069cf8897be49cbdb401f4d8cead6e80d221554b42aa0e3bd6bf1f7dc"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "f4cd61956b0b174860d66cd3733a15cd67c6e0adb5d7d311bd79dbaa88dc2c95"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "fec88a3d8ed7791ab028a76b412b57ee41e8b42335004e480670260981267341"
       }
     },
     "2021-02-20": {
@@ -5721,24 +5721,24 @@
     },
     "2022-04-15": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "95e9e4bd84e9adb6ec84818ae264c732c0836d7f853abfbb0b20cc08b1c3057d"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "5a7ef2a2992176d1f954d4553e21f8f76136c414601581fa060f5afc8d050854"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "d7ddeacf6e6e6439f2a5e2b096615293fac659b908779618f534ab6d324ecc56"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "af96be7149e097dacb1e7b5182ad56782ab3006ba3f4b1e16dcc9a9e990bc6b5"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "c32d0c701f23cb6dc9d09d4ba3ba8eff2d6921aef0b31e566656c0326bb9e927"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "444ccd3069cf8897be49cbdb401f4d8cead6e80d221554b42aa0e3bd6bf1f7dc"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1816+d66c61a2c.tar.xz",
-        "version": "0.10.0-dev.1816+d66c61a2c",
-        "sha256": "f4cd61956b0b174860d66cd3733a15cd67c6e0adb5d7d311bd79dbaa88dc2c95"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1837+4c83b11f7.tar.xz",
+        "version": "0.10.0-dev.1837+4c83b11f7",
+        "sha256": "fec88a3d8ed7791ab028a76b412b57ee41e8b42335004e480670260981267341"
       }
     }
   },
