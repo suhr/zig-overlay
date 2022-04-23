@@ -36,24 +36,24 @@
     },
     "latest": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "33ed61e3ad3a2e37aa1cfac744903a46533cc49a527215832ae81781e7176a54"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "68757c7a69b66d4ca19d86ddbbedd3907c08f2d1d7946f0374136340c98d114a"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "69c61a5a4ec1b5c4a66c5d0ffb8490126405ef8576082ab1c72d71e756f09b84"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "34ac67d89e8bbf4523279c2266b687420800fa8071fe3f79ce295d4a3d9b6662"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "46e7b26a92e8394d5d8bc4225d6ae070e817d12d17a7d4d24964a0500a15a213"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "f6f9ef7e3fdc9e43680aed35a4dbe1d8c2858d2af02a57a15a4fd8aa3cf65282"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "0e572362496e2b37f4f2961b44726650307b3c65c7f73840fc1c79a232246058"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "19d811596e00f15c71b8b36ef8792ba2a67266f53adbc54fd058cbfce3596039"
       }
     },
     "2021-02-20": {
@@ -5853,24 +5853,24 @@
     },
     "2022-04-22": {
       "x86_64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "33ed61e3ad3a2e37aa1cfac744903a46533cc49a527215832ae81781e7176a54"
+        "url": "https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "68757c7a69b66d4ca19d86ddbbedd3907c08f2d1d7946f0374136340c98d114a"
       },
       "aarch64-linux": {
-        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "69c61a5a4ec1b5c4a66c5d0ffb8490126405ef8576082ab1c72d71e756f09b84"
+        "url": "https://ziglang.org/builds/zig-linux-aarch64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "34ac67d89e8bbf4523279c2266b687420800fa8071fe3f79ce295d4a3d9b6662"
       },
       "x86_64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "46e7b26a92e8394d5d8bc4225d6ae070e817d12d17a7d4d24964a0500a15a213"
+        "url": "https://ziglang.org/builds/zig-macos-x86_64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "f6f9ef7e3fdc9e43680aed35a4dbe1d8c2858d2af02a57a15a4fd8aa3cf65282"
       },
       "aarch64-darwin": {
-        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1903+6d0283e6b.tar.xz",
-        "version": "0.10.0-dev.1903+6d0283e6b",
-        "sha256": "0e572362496e2b37f4f2961b44726650307b3c65c7f73840fc1c79a232246058"
+        "url": "https://ziglang.org/builds/zig-macos-aarch64-0.10.0-dev.1927+cf20b97b7.tar.xz",
+        "version": "0.10.0-dev.1927+cf20b97b7",
+        "sha256": "19d811596e00f15c71b8b36ef8792ba2a67266f53adbc54fd058cbfce3596039"
       }
     }
   },
